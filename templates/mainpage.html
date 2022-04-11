@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<h3 align ="center" >Welcome Gaze Detector</h3>
+<h3 align ="center" >Your test ID is: {{id}}</h3>
+
+<h3 align ="center" >left key: {{left}}</h3>
+<h3 align ="center" >right key: {{right}}</h3>
+<h3 align ="center" >down key: {{down}}</h3>
+<p>(Note this session Id is get from Database Table using PHP query when insertion take place) Then this session ID is passed to API so that it perform queries on database</p>
+<form action="/animation1" method="post" align="center">
+    <p>Session_ID :<input type = "text" name = "session_id" value="01" /></p>
+    <p> This button checks the results of animation 1<button name="submit" value= "Test"   type="submit" class="btn btn-info">Chcek Animation 1 Result</button>
+    </p>
+</form>
+
+<form action="/test" method="post" align="center">
+
+   <p> This button calls the API to check all 5 videos of person and stores the results in folder on server.
+       <button name="submit" value= "Test"   type="submit" class="btn btn-info"> Testing 5 videos </button>
+    </p>
+</form>
+
+
+</body>
+</html>

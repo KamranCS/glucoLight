@@ -1,0 +1,1 @@
+This is static folder where we can put "CSS" or "javascript" files if any.
